@@ -135,11 +135,11 @@ copy ..\Uploader\Redist.zip ..\..\UploadBits\$(Platform)-$(Configuration)-Bootst
     <PostBuildEvent>
       <Message>Copy bits needed to upload Roblox project to UploadBits directory</Message>
       <Command>%40echo off
-mkdir ..\..\UploadBits
-rmdir /s /q ..\..\UploadBits\$(Platform)-$(Configuration)-BootstrapperRccService\
-mkdir ..\..\UploadBits\$(Platform)-$(Configuration)-BootstrapperRccService\
-xcopy /h /e /k /q ..\BootstrapperRccService\bin\$(Configuration)\*.* ..\..\UploadBits\$(Platform)-$(Configuration)-BootstrapperRccService\
-copy ..\Uploader\Redist.zip ..\..\UploadBits\$(Platform)-$(Configuration)-BootstrapperRccService\Redist.zip
+mkdir ..\UploadBits
+rmdir /s /q ..\UploadBits\$(Platform)-$(Configuration)-BootstrapperRccService\
+mkdir ..\UploadBits\$(Platform)-$(Configuration)-BootstrapperRccService\
+xcopy /h /e /k /q ..\BootstrapperRccService\bin\$(Configuration)\*.* ..\UploadBits\$(Platform)-$(Configuration)-BootstrapperRccService\
+copy ..\Uploader\Redist.zip ..\UploadBits\$(Platform)-$(Configuration)-BootstrapperRccService\Redist.zip
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>

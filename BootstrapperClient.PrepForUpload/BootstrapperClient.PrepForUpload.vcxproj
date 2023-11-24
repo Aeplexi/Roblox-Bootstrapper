@@ -137,13 +137,12 @@ GenerateBootstrappers.bat $(Configuration)
     <PostBuildEvent>
       <Message>Copy bits needed to upload Roblox project to UploadBits directory</Message>
       <Command>%40echo off
-mkdir ..\..\UploadBits
-rmdir /s /q ..\..\UploadBits\$(Platform)-$(Configuration)-BootstrapperClient\
-mkdir ..\..\UploadBits\$(Platform)-$(Configuration)-BootstrapperClient\
-xcopy /h /e /k /q ..\BootstrapperClient\bin\$(Configuration)\*.* ..\..\UploadBits\$(Platform)-$(Configuration)-BootstrapperClient\
-copy  ..\Uploader\Redist.zip ..\..\UploadBits\$(Platform)-$(Configuration)-BootstrapperClient\Redist.zip
-GenerateBootstrappers.bat $(Configuration)
-</Command>
+mkdir ..\UploadBits
+rmdir /s /q ..\UploadBits\$(Platform)-$(Configuration)-BootstrapperClient\
+mkdir ..\UploadBits\$(Platform)-$(Configuration)-BootstrapperClient\
+xcopy /h /e /k /q ..\BootstrapperClient\bin\$(Configuration)\*.* ..\UploadBits\$(Platform)-$(Configuration)-BootstrapperClient\
+copy  ..\Uploader\Redist.zip ..\UploadBits\$(Platform)-$(Configuration)-BootstrapperClient\Redist.zip
+GenerateBootstrappers.bat $(Configuration)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NoOpt|Win32'">

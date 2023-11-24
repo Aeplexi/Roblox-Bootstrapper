@@ -137,10 +137,10 @@ copy  ..\Uploader\Redist.zip ..\..\UploadBits\$(Platform)-$(Configuration)-Boots
     <PostBuildEvent>
       <Message>Copy bits needed for upload</Message>
       <Command>%40echo off
-mkdir ..\..\UploadBits
-rmdir /s /q ..\..\UploadBits\$(Platform)-$(Configuration)-BootstrapperQTStudio\
-mkdir ..\..\UploadBits\$(Platform)-$(Configuration)-BootstrapperQTStudio\
-xcopy /h /e /k ..\BootstrapperQTStudio\bin\$(Configuration)\*.* ..\..\UploadBits\$(Platform)-$(Configuration)-BootstrapperQTStudio\
+mkdir ..\UploadBits
+rmdir /s /q ..\UploadBits\$(Platform)-$(Configuration)-BootstrapperQTStudio\
+mkdir ..\UploadBits\$(Platform)-$(Configuration)-BootstrapperQTStudio\
+xcopy /h /e /k ..\BootstrapperQTStudio\bin\$(Configuration)\*.* ..\UploadBits\$(Platform)-$(Configuration)-BootstrapperQTStudio\
 copy  ..\Uploader\Redist.zip ..\..\UploadBits\$(Platform)-$(Configuration)-BootstrapperQTStudio\Redist.zip
 </Command>
     </PostBuildEvent>
