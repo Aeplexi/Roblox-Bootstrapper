@@ -8,4 +8,4 @@ To contribute to this, please send a pull request.
 # Building
 You NEED Visual Studio 2012 Build Tools to compile!
 You can find these online with Visual Studio 2012.
-You will also need to set CONTRIB_PATH to a folder with the libraries required to build. You may find all of them here: (https://archive.roblonium.com/Client/Contrib2.7z)[Contrib Files]
+You will also need to set CONTRIB_PATH to a folder with the libraries required to build. You may find all of them here: [https://archive.roblonium.com/Client/Contrib2.7z](Contrib Files)
