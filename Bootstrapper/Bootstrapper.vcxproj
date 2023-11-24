@@ -26,11 +26,12 @@
     <SccLocalPath>..</SccLocalPath>
     <SccProvider>MSSCCI:Perforce SCM</SccProvider>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v110</PlatformToolset>
     <UseOfAtl>Static</UseOfAtl>
     <CharacterSet>Unicode</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -98,7 +99,7 @@
     </CustomBuildStep>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(CONTRIB_PATH)\boost_1_55_0\include;$(CONTRIB_PATH)\boost_1_50_0\src;..\..\ClientShared;..\..\RBXCookies;..\..\Win;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(CONTRIB_PATH)\boost_1_56_0\include;$(CONTRIB_PATH)\boost_1_56_0\src;..\ClientShared;..\RBXCookies;..\Win;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;BOOST_THREAD_BUILD_LIB;BOOST_CHRONO_HEADER_ONLY;LOCAL_TESTING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -121,7 +122,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(CONTRIB_PATH)\boost_1_55_0\include;$(CONTRIB_PATH)\boost_1_50_0\src;..\..\ClientShared;..\..\RBXCookies;..\..\Win;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(CONTRIB_PATH)\boost_1_56_0\include;$(CONTRIB_PATH)\boost_1_560\src;..\ClientShared;..\RBXCookies;..\Win;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;BOOST_THREAD_BUILD_LIB;BOOST_CHRONO_HEADER_ONLY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -143,9 +144,9 @@
       <Optimization>MinSpace</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
-      <AdditionalIncludeDirectories>$(CONTRIB_PATH)\boost_1_55_0\include;$(CONTRIB_PATH)\boost_1_50_0\src;..\..\ClientShared;..\..\RBXCookies;..\..\Win;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(CONTRIB_PATH)\boost_1_56_0\include;$(CONTRIB_PATH)\boost_1_56_0\src;.\ClientShared;.\RBXCookies;.\Win;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;BOOST_THREAD_BUILD_LIB;BOOST_CHRONO_HEADER_ONLY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
@@ -167,7 +168,7 @@
       <Optimization>MinSpace</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
-      <AdditionalIncludeDirectories>$(CONTRIB_PATH)\boost_1_55_0\include;$(CONTRIB_PATH)\boost_1_50_0\src;..\..\ClientShared;..\..\RBXCookies;..\..\Win;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(CONTRIB_PATH)\boost_1_56_0\include;$(CONTRIB_PATH)\boost_1_56_0\src;..\ClientShared;..\RBXCookies;..\Win;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;BOOST_THREAD_BUILD_LIB;BOOST_CHRONO_HEADER_ONLY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -180,7 +181,7 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\ClientShared\format_string.cpp">
+    <ClCompile Include="..\ClientShared\format_string.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
       </PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -190,9 +191,9 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
       </PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="..\..\ClientShared\InfluxDbHelper.cpp" />
-    <ClCompile Include="..\..\ClientShared\RobloxServicesTools.cpp" />
-    <ClCompile Include="..\..\ClientShared\StringConv.cpp">
+    <ClCompile Include="..\ClientShared\InfluxDbHelper.cpp" />
+    <ClCompile Include="..\ClientShared\RobloxServicesTools.cpp" />
+    <ClCompile Include="..\ClientShared\StringConv.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
       </PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -202,7 +203,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
       </PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="..\..\ClientShared\Win\CookiesEngine.cpp">
+    <ClCompile Include="..\ClientShared\Win\CookiesEngine.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
       </PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -212,8 +213,8 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
       </PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="..\..\Win\VersionInfo.cpp" />
-    <ClCompile Include="..\..\Win\VistaTools.cpp" />
+    <ClCompile Include="..\Win\VersionInfo.cpp" />
+    <ClCompile Include="..\Win\VistaTools.cpp" />
     <ClCompile Include="Bootstrapper.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
@@ -427,14 +428,14 @@
     <None Include="Roblox.inf" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\ClientShared\CookiesEngine.h" />
-    <ClInclude Include="..\..\ClientShared\format_string.h" />
-    <ClInclude Include="..\..\ClientShared\InfluxDbHelper.h" />
-    <ClInclude Include="..\..\ClientShared\RobloxServicesTools.h" />
-    <ClInclude Include="..\..\ClientShared\StringConv.h" />
-    <ClInclude Include="..\..\Win\ProcessInformation.h" />
-    <ClInclude Include="..\..\Win\VersionInfo.h" />
-    <ClInclude Include="..\..\Win\VistaTools.h" />
+    <ClInclude Include="..\ClientShared\CookiesEngine.h" />
+    <ClInclude Include="..\ClientShared\format_string.h" />
+    <ClInclude Include="..\ClientShared\InfluxDbHelper.h" />
+    <ClInclude Include="..\ClientShared\RobloxServicesTools.h" />
+    <ClInclude Include="..\ClientShared\StringConv.h" />
+    <ClInclude Include="..\Win\ProcessInformation.h" />
+    <ClInclude Include="..\Win\VersionInfo.h" />
+    <ClInclude Include="..\Win\VistaTools.h" />
     <ClInclude Include="Bootstrapper.h" />
     <ClInclude Include="BootstrapperSite.h" />
     <ClInclude Include="ComModule.h" />
