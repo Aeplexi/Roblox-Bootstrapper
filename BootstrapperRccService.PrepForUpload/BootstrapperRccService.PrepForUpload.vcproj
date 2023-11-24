@@ -40,7 +40,7 @@
 			<Tool
 				Name="VCPostBuildEventTool"
 				Description="Copy bits needed to upload Roblox project to UploadBits directory"
-				CommandLine="@echo off&#x0D;&#x0A;mkdir ..\..\UploadBits&#x0D;&#x0A;rmdir /s /q ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;mkdir ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;xcopy /h /e /k /q ..\BootstrapperRccService\bin\$(ConfigurationName)\*.* ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;copy ..\Uploader\Redist.zip ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\Redist.zip&#x0D;&#x0A;"
+				CommandLine="@echo off&#x0D;&#x0A;mkdir ..\UploadBits&#x0D;&#x0A;rmdir /s /q ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;mkdir ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;xcopy /h /e /k /q ..\BootstrapperRccService\bin\$(ConfigurationName)\*.* ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;copy ..\Uploader\Redist.zip ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\Redist.zip&#x0D;&#x0A;"
 			/>
 		</Configuration>
 		<Configuration
@@ -63,7 +63,7 @@
 			<Tool
 				Name="VCPostBuildEventTool"
 				Description="Copy bits needed to upload Roblox project to UploadBits directory"
-				CommandLine="@echo off&#x0D;&#x0A;mkdir ..\..\UploadBits&#x0D;&#x0A;rmdir /s /q ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;mkdir ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;xcopy /h /e /k /q ..\BootstrapperRccService\bin\$(ConfigurationName)\*.* ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;copy ..\Uploader\Redist.zip ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\Redist.zip&#x0D;&#x0A;"
+				CommandLine="@echo off&#x0D;&#x0A;mkdir ..\UploadBits&#x0D;&#x0A;rmdir /s /q ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;mkdir ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;xcopy /h /e /k /q ..\BootstrapperRccService\bin\$(ConfigurationName)\*.* ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;copy ..\Uploader\Redist.zip ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\Redist.zip&#x0D;&#x0A;"
 			/>
 		</Configuration>
 		<Configuration
@@ -86,7 +86,7 @@
 			<Tool
 				Name="VCPostBuildEventTool"
 				Description="Copy bits needed to upload Roblox project to UploadBits directory"
-				CommandLine="@echo off&#x0D;&#x0A;mkdir ..\..\UploadBits&#x0D;&#x0A;rmdir /s /q ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;mkdir ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;xcopy /h /e /k /q ..\BootstrapperRccService\bin\Release\*.* ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;copy ..\Uploader\Redist.zip ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\Redist.zip&#x0D;&#x0A;"
+				CommandLine="@echo off&#x0D;&#x0A;mkdir ..\UploadBits&#x0D;&#x0A;rmdir /s /q ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;mkdir ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;xcopy /h /e /k /q ..\BootstrapperRccService\bin\Release\*.* ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;copy ..\Uploader\Redist.zip ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\Redist.zip&#x0D;&#x0A;"
 			/>
 		</Configuration>
 		<Configuration
@@ -109,7 +109,7 @@
 			<Tool
 				Name="VCPostBuildEventTool"
 				Description="Copy bits needed to upload Roblox project to UploadBits directory"
-				CommandLine="@echo off&#x0D;&#x0A;mkdir ..\..\UploadBits&#x0D;&#x0A;rmdir /s /q ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;mkdir ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;xcopy /h /e /k /q ..\BootstrapperRccService\bin\$(ConfigurationName)\*.* ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;copy ..\Uploader\Redist.zip ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\Redist.zip&#x0D;&#x0A;"
+				CommandLine="@echo off&#x0D;&#x0A;mkdir ..\UploadBits&#x0D;&#x0A;rmdir /s /q ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;mkdir ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;xcopy /h /e /k /q ..\BootstrapperRccService\bin\$(ConfigurationName)\*.* ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;copy ..\Uploader\Redist.zip ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\Redist.zip&#x0D;&#x0A;"
 			/>
 		</Configuration>
 		<Configuration
@@ -133,7 +133,7 @@
 			<Tool
 				Name="VCPostBuildEventTool"
 				Description="Copy bits needed to upload Roblox project to UploadBits directory"
-				CommandLine="@echo off&#x0D;&#x0A;mkdir ..\..\UploadBits&#x0D;&#x0A;rmdir /s /q ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;mkdir ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;xcopy /h /e /k /q ..\BootstrapperRccService\bin\$(ConfigurationName)\*.* ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;copy ..\Uploader\Redist.zip ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\Redist.zip&#x0D;&#x0A;"
+				CommandLine="@echo off&#x0D;&#x0A;mkdir ..\UploadBits&#x0D;&#x0A;rmdir /s /q ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;mkdir ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;xcopy /h /e /k /q ..\BootstrapperRccService\bin\$(ConfigurationName)\*.* ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;copy ..\Uploader\Redist.zip ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\Redist.zip&#x0D;&#x0A;"
 			/>
 		</Configuration>
 		<Configuration
@@ -157,7 +157,7 @@
 			<Tool
 				Name="VCPostBuildEventTool"
 				Description="Copy bits needed to upload Roblox project to UploadBits directory"
-				CommandLine="@echo off&#x0D;&#x0A;mkdir ..\..\UploadBits&#x0D;&#x0A;rmdir /s /q ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;mkdir ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;xcopy /h /e /k /q ..\BootstrapperRccService\bin\Release\*.* ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;copy ..\Uploader\Redist.zip ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\Redist.zip&#x0D;&#x0A;"
+				CommandLine="@echo off&#x0D;&#x0A;mkdir ..\UploadBits&#x0D;&#x0A;rmdir /s /q ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;mkdir ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;xcopy /h /e /k /q ..\BootstrapperRccService\bin\Release\*.* ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\&#x0D;&#x0A;copy ..\Uploader\Redist.zip ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperRccService\Redist.zip&#x0D;&#x0A;"
 			/>
 		</Configuration>
 	</Configurations>

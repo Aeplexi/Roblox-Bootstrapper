@@ -42,7 +42,7 @@
 			<Tool
 				Name="VCPostBuildEventTool"
 				Description="Copy bits needed for upload"
-				CommandLine="@echo off&#x0D;&#x0A;mkdir ..\..\UploadBits&#x0D;&#x0A;rmdir /s /q ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;mkdir ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;xcopy /h /e /k ..\BootstrapperQTStudio\bin\$(ConfigurationName)\*.* ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;copy  ..\Uploader\Redist.zip ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\Redist.zip&#x0D;&#x0A;"
+				CommandLine="@echo off&#x0D;&#x0A;mkdir ..\UploadBits&#x0D;&#x0A;rmdir /s /q ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;mkdir ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;xcopy /h /e /k ..\BootstrapperQTStudio\bin\$(ConfigurationName)\*.* ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;copy  ..\Uploader\Redist.zip ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\Redist.zip&#x0D;&#x0A;"
 			/>
 		</Configuration>
 		<Configuration
@@ -65,7 +65,7 @@
 			<Tool
 				Name="VCPostBuildEventTool"
 				Description="Copy bits needed for upload"
-				CommandLine="@echo off&#x0D;&#x0A;mkdir ..\..\UploadBits&#x0D;&#x0A;rmdir /s /q ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;mkdir ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;xcopy /h /e /k ..\BootstrapperQTStudio\bin\$(ConfigurationName)\*.* ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;copy  ..\Uploader\Redist.zip ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\Redist.zip&#x0D;&#x0A;"
+				CommandLine="@echo off&#x0D;&#x0A;mkdir ..\UploadBits&#x0D;&#x0A;rmdir /s /q ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;mkdir ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;xcopy /h /e /k ..\BootstrapperQTStudio\bin\$(ConfigurationName)\*.* ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;copy  ..\Uploader\Redist.zip ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\Redist.zip&#x0D;&#x0A;"
 			/>
 		</Configuration>
 		<Configuration
@@ -88,7 +88,7 @@
 			<Tool
 				Name="VCPostBuildEventTool"
 				Description="Copy bits needed for upload"
-				CommandLine="@echo off&#x0D;&#x0A;mkdir ..\..\UploadBits&#x0D;&#x0A;rmdir /s /q ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;mkdir ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;xcopy /h /e /k ..\BootstrapperQTStudio\bin\$(ConfigurationName)\*.* ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;copy  ..\Uploader\Redist.zip ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\Redist.zip&#x0D;&#x0A;"
+				CommandLine="@echo off&#x0D;&#x0A;mkdir ..\UploadBits&#x0D;&#x0A;rmdir /s /q ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;mkdir ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;xcopy /h /e /k ..\BootstrapperQTStudio\bin\$(ConfigurationName)\*.* ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;copy  ..\Uploader\Redist.zip ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\Redist.zip&#x0D;&#x0A;"
 			/>
 		</Configuration>
 		<Configuration
@@ -111,7 +111,7 @@
 			<Tool
 				Name="VCPostBuildEventTool"
 				Description="Copy bits needed for upload"
-				CommandLine="@echo off&#x0D;&#x0A;mkdir ..\..\UploadBits&#x0D;&#x0A;rmdir /s /q ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;mkdir ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;xcopy /h /e /k ..\BootstrapperQTStudio\bin\$(ConfigurationName)\*.* ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;copy  ..\Uploader\Redist.zip ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\Redist.zip&#x0D;&#x0A;"
+				CommandLine="@echo off&#x0D;&#x0A;mkdir ..\UploadBits&#x0D;&#x0A;rmdir /s /q ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;mkdir ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;xcopy /h /e /k ..\BootstrapperQTStudio\bin\$(ConfigurationName)\*.* ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;copy  ..\Uploader\Redist.zip ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\Redist.zip&#x0D;&#x0A;"
 			/>
 		</Configuration>
 		<Configuration
@@ -135,7 +135,7 @@
 			<Tool
 				Name="VCPostBuildEventTool"
 				Description="Copy bits needed for upload"
-				CommandLine="@echo off&#x0D;&#x0A;mkdir ..\..\UploadBits&#x0D;&#x0A;rmdir /s /q ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;mkdir ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;xcopy /h /e /k ..\BootstrapperQTStudio\bin\$(ConfigurationName)\*.* ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;copy  ..\Uploader\Redist.zip ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\Redist.zip&#x0D;&#x0A;"
+				CommandLine="@echo off&#x0D;&#x0A;mkdir ..\UploadBits&#x0D;&#x0A;rmdir /s /q ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;mkdir ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;xcopy /h /e /k ..\BootstrapperQTStudio\bin\$(ConfigurationName)\*.* ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;copy  ..\Uploader\Redist.zip ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\Redist.zip&#x0D;&#x0A;"
 			/>
 		</Configuration>
 		<Configuration
@@ -159,7 +159,7 @@
 			<Tool
 				Name="VCPostBuildEventTool"
 				Description="Copy bits needed for upload"
-				CommandLine="@echo off&#x0D;&#x0A;mkdir ..\..\UploadBits&#x0D;&#x0A;rmdir /s /q ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;mkdir ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;xcopy /h /e /k ..\BootstrapperQTStudio\bin\$(ConfigurationName)\*.* ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;copy  ..\Uploader\Redist.zip ..\..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\Redist.zip&#x0D;&#x0A;"
+				CommandLine="@echo off&#x0D;&#x0A;mkdir ..\UploadBits&#x0D;&#x0A;rmdir /s /q ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;mkdir ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;xcopy /h /e /k ..\BootstrapperQTStudio\bin\$(ConfigurationName)\*.* ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\&#x0D;&#x0A;copy  ..\Uploader\Redist.zip ..\UploadBits\$(PlatformName)-$(ConfigurationName)-BootstrapperQTStudio\Redist.zip&#x0D;&#x0A;"
 			/>
 		</Configuration>
 	</Configurations>
