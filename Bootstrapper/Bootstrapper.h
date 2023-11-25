@@ -205,7 +205,7 @@ protected:
 	virtual void RunPreDeploy() {}
 	virtual bool ForceNoDialogMode() { return false; }
 	virtual bool GetLogChromeProtocolFix() { return false; }
-	virtual bool GetUseNewVersionFetch() { return false; }
+	virtual bool GetUseNewVersionFetch() { return true; }
 	virtual bool GetUseDataDomain() { return true; }
 	virtual bool CreateEdgeRegistry() { return true; }
 	virtual bool DeleteEdgeRegistry() { return false; }

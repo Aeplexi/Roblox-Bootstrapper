@@ -116,7 +116,7 @@ CRegKey GetKey(CString& out_operation, bool isStudioKey, bool is64bits)
 		return _T("");
 
 	// Initialize the User Agent
-	CHINTERNET session = InternetOpen(_T("RobloxProxy"), PRE_CONFIG_INTERNET_ACCESS, NULL, NULL, 0);
+	CHINTERNET session = InternetOpen(_T(""), PRE_CONFIG_INTERNET_ACCESS, NULL, NULL, 0);
 	CHINTERNET connection = ::InternetConnect(session, u.GetHostName(), u.GetPortNumber(), u.GetUserName(), u.GetPassword(), INTERNET_SERVICE_HTTP, 0, 1); 
 
 	//   1. Open HTTP Request (pass method type [get/post/..] and URL path (except server name))

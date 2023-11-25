@@ -976,11 +976,6 @@ void BootstrapperClient::registerFirefoxPlugin(const TCHAR* id, bool is64Bits)
 	key.SetStringValue(_T("Vendor"), _T("Roblox"));
 	key.SetStringValue(_T("Version"), _T("1"));
 
-	if (is64Bits)
-		key.SetStringValue(_T("Path"), (programDirectory() + _T("\\NPRobloxProxy64.dll")).c_str());
-	else
-		key.SetStringValue(_T("Path"), (programDirectory() + _T("\\NPRobloxProxy.dll")).c_str());
-
 	CreateKey(parent, format_string(_T("SOFTWARE\\MozillaPlugins\\%s\\MimeTypes"), id).c_str(), NULL, is64Bits);
 	CreateKey(parent, format_string(_T("SOFTWARE\\MozillaPlugins\\%s\\MimeTypes\\application/x-vnd-roblox-launcher"), id).c_str(), NULL, is64Bits);
 }
@@ -1044,7 +1039,7 @@ void BootstrapperClient::DoInstallApp()
 	
 	// setup studio bootstrappers so we can launch studio (has to be done before we do much else, to make sure we launch right application)
 	installStudioLauncher(isUpdating);
-
+	// RobloxProxy has fully been removed so this does not matter for any purpose anymore with RobloxProxy.
 	// "install key" and "install host" must be set before RobloxProxy is deployed, because RobloxProxy uses these values
 	LOG_ENTRY("set install key");
 	CRegKey installKey = CreateKey(isPerUser() ? HKEY_CURRENT_USER : HKEY_LOCAL_MACHINE, GetRegistryPath().c_str(), (programDirectory() + BootstrapperFileName).c_str());
