@@ -1189,7 +1189,7 @@ void Bootstrapper::RegisterUninstall(const TCHAR *productName)
 	std::wstring uninstallString = format_string(_T("\"%s%s\" -uninstall%s"), programDirectory().c_str(), GetBootstrapperFileName().c_str(), perUser ? _T("") : _T(" -alluser"));
 	throwHRESULT (keyProductCode.SetStringValue(_T("UninstallString"), uninstallString.c_str(), REG_EXPAND_SZ), "Failed to set UninstallString key");
 	throwHRESULT (keyProductCode.SetStringValue(_T("Publisher"), _T("ROBLOX Corporation")), "Failed to set Publisher key");
-	throwHRESULT (keyProductCode.SetStringValue(_T("URLInfoAbout"), _T("http://www.roblox.com")), "Failed to set URLInfoAbout key");
+	throwHRESULT (keyProductCode.SetStringValue(_T("URLInfoAbout"), _T("http://www.fossci.com")), "Failed to set URLInfoAbout key");
 	throwHRESULT (keyProductCode.SetStringValue(_T("Comments"), convert_s2w(installVersion).c_str()), "Failed to set Comments key");
 	throwHRESULT (keyProductCode.SetStringValue(_T("InstallLocation"), programDirectory().c_str()), "Failed to set InstallLocation key");
 	throwHRESULT (keyProductCode.SetDWORDValue(_T("NoModify"), 1), "Failed to set NoModify key");
@@ -1624,13 +1624,12 @@ std::string Bootstrapper::fetchVersionGuid(std::string product = std::string())
 
 std::string Bootstrapper::fetchVersionGuidFromWeb(std::string product)
 {
-	if (GetUseNewVersionFetch() && BinaryType() != "")
+	if (GetUseNewVersionFetch()/* && BinaryType() != ""*/)
 	{
 		//std::ostrstream result;
 		//HttpTools::httpGet(this, BaseHost(), "/game/ClientVersion.ashx", std::string(), result, false, boost::bind(&Bootstrapper::dummyProgress, _1, _2));
 		//result << (char) 0;
 		//return result.str();
-
 		std::string url = GetClientVersionUploadUrl(baseHost, "76e5a40c-3ae1-4028-9f10-7c62520bd94f");
 		url += "&binaryType=" + BinaryType();
 		std::string result = HttpTools::httpGetString(url);
@@ -3146,7 +3145,7 @@ void Bootstrapper::setLatestProcess()
 {
 	int pid = _getpid();
 
-	const std::string latestProcessName = format_string("www.roblox.com/%s/%s/latestProcess", installHost.c_str(), Type().c_str());
+	const std::string latestProcessName = format_string("www.fossci.com/%s/%s/latestProcess", installHost.c_str(), Type().c_str());
 
 	latestProcess.Attach(CreateFileMapping(
 			 INVALID_HANDLE_VALUE,    // use paging file

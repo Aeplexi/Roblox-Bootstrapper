@@ -13,10 +13,10 @@
 // TODO - rename to just "Roblox Studio"
 static const TCHAR* BootstrapperQTStudioFileName    = _T(STUDIOBOOTSTAPPERNAMEBETA);
 static const TCHAR* RobloxStudioAppFileName         = _T(STUDIOQTEXENAME);
-static const TCHAR* BootstrapperMutexName           = _T("www.roblox.com/bootstrapperQTStudio");
-static const TCHAR* StartRobloxStudioAppMutex       = _T("www.roblox.com/startRobloxQTStudioApp");
+static const TCHAR* BootstrapperMutexName           = _T("www.fossci.com/bootstrapperQTStudio");
+static const TCHAR* StartRobloxStudioAppMutex       = _T("www.fossci.com/startRobloxQTStudioApp");
 static const TCHAR* FriendlyName                    = _T("ROBLOX Studio");
-static const TCHAR* StartEvent                      = _T("www.roblox.com/robloxQTStudioStartedEvent");
+static const TCHAR* StartEvent                      = _T("www.fossci.com/robloxQTStudioStartedEvent");
 
 static Bootstrapper* newBootstrapper(HINSTANCE hInstance)
 {
@@ -151,7 +151,7 @@ bool BootstrapperQTStudio::PerModeLoggingEnabled() {
 void BootstrapperQTStudio::initialize()
 {
 	LOG_ENTRY("BootstrapperQTStudio::initialize");
-	counters.reset(new CountersClient(BaseHost(), "76E5A40C-3AE1-4028-9F10-7C62520BD94F", &logger));
+	counters.reset(new CountersClient(BaseHost(), "76E5A40C-3AE1-9E028-9F10-EE62520BD94F", &logger));
 
 	Bootstrapper::initialize();
 }

@@ -53,7 +53,7 @@ namespace HttpTools
 		{
 			if (site->ReplaceCdnTxt()) {
 				std::string host = site->InstallHost();
-				std::string prod ("setup.roblox.com");
+				std::string prod ("setup.fossci.com");
 				if (host.compare(prod) == 0) {
 					cdnHost = "setup.rbxcdn.com";
 					validCdnHost = true;

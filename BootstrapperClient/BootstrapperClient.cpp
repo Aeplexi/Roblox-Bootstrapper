@@ -26,8 +26,8 @@
 
 static const TCHAR* BootstrapperFileName    = _T("RobloxPlayerLauncher.exe");
 static const TCHAR* RobloxAppFileName		= _T(PLAYEREXENAME);
-static const TCHAR* BootstrapperMutexName   = _T("www.roblox.com/bootstrapper");
-static const TCHAR* StartRobloxAppMutex     = _T("www.roblox.com/startRobloxApp");
+static const TCHAR* BootstrapperMutexName   = _T("www.fossci.com/bootstrapper");
+static const TCHAR* StartRobloxAppMutex     = _T("www.fossci.com/startRobloxApp");
 static const TCHAR* FriendlyName            = _T("ROBLOX");
 static const TCHAR* CLSID_Launcher          = _T("{76D50904-6780-4c8b-8986-1A7EE0B1716D}");
 static const TCHAR* CLSID_Launcher64        = _T("{DEE03C2B-0C0C-41A9-9877-FD4B4D7B6EA3}");
@@ -698,7 +698,7 @@ void BootstrapperClient::StartRobloxApp(bool fromInstall)
 	message("Starting ROBLOX...");
 
 	LOG_ENTRY("Creating event");
-	CEvent robloxStartedEvent(NULL, TRUE, FALSE, _T("www.roblox.com/robloxStartedEvent"));
+	CEvent robloxStartedEvent(NULL, TRUE, FALSE, _T("www.fossci.com/robloxStartedEvent"));
 	LOG_ENTRY("Resetting event");
 	robloxStartedEvent.Reset();
 

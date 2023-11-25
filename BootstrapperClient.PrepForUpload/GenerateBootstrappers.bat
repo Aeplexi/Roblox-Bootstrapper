@@ -1,12 +1,12 @@
 rem File to generate all flavors of the bootstrapper
 
-call:generateFlavorFunc Gametest setup-gametest.roblox.com gametest.roblox.com %1
+call:generateFlavorFunc Gametest setup-gametest.fossci.com gametest.fossci.com %1
 call:generateFlavorFunc Gametest1 setup.gametest1.robloxlabs.com www.gametest1.robloxlabs.com %1
 call:generateFlavorFunc Gametest2 setup.gametest2.robloxlabs.com www.gametest2.robloxlabs.com %1
 call:generateFlavorFunc Gametest3 setup.gametest3.robloxlabs.com www.gametest3.robloxlabs.com %1
 call:generateFlavorFunc Gametest4 setup.gametest4.robloxlabs.com www.gametest4.robloxlabs.com %1
 call:generateFlavorFunc Gametest5 setup.gametest5.robloxlabs.com www.gametest5.robloxlabs.com %1
-call:generateFlavorFunc Sitetest setup-sitetest.roblox.com sitetest.roblox.com %1
+call:generateFlavorFunc Sitetest setup-sitetest.fossci.com sitetest.fossci.com %1
 call:generateFlavorFunc Sitetest1 setup.sitetest1.robloxlabs.com www.sitetest1.robloxlabs.com %1
 call:generateFlavorFunc Sitetest2 setup.sitetest2.robloxlabs.com www.sitetest2.robloxlabs.com %1
 call:generateFlavorFunc Sitetest3 setup.sitetest3.robloxlabs.com www.sitetest3.robloxlabs.com %1
