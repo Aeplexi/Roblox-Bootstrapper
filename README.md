@@ -1,5 +1,6 @@
 # Fossci-Bootstrapper
- Fossci.com bootstrapper, stripped from the ROBLOX 2016 source leak.
+NOTE: FOSSCI DOES CURRENTLY NOT USE THIS 
+Fossci.com bootstrapper, stripped from the ROBLOX 2016 source leak.
 
 # Information
 For the version without anything changed to use for your revival in your case, use this: [Click here](https://github.com/Aeplexi/Fossci-Bootstrapper/tree/2ab1c16f7cd97bd5c1a81c585a201c4656eca9d9)
